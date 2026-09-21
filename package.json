@@ -1,0 +1,27 @@
+{
+  "name": "bes-scraper-engine",
+  "version": "1.0.0",
+  "description": "Motor de scraping independiente para SUNAT (PDFs) y SUNAFIL (notificaciones) — BES",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "ts-node src/main.ts",
+    "dev:server": "ts-node src/server.ts",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "puppeteer": "^24.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.7",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
